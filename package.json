@@ -1,7 +1,7 @@
 {
-  "name": "static",
+  "name": "react-first",
   "version": "1.0.0",
-  "description": "This is a static template with no bundling",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "serve"
@@ -12,8 +12,8 @@
   },
   "keywords": [
     "template",
-    "codesandbox",
-    "static"
+    "static",
+    "codesandbox"
   ],
   "author": "Ives van Hoorne",
   "license": "MIT",
