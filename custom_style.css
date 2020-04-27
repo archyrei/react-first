@@ -64,8 +64,39 @@ html {
   font-size: 1.8rem;
   font-family: "Economica", sans-serif;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 18px;
   background: unset;
   border: unset;
   outline: unset;
+}
+
+.add {
+  padding: 16px;
+}
+
+.add-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-input {
+  border: unset;
+  background: unset;
+  outline: unset;
+  padding: 0 64px;
+  border-bottom: 2px solid var(--another-blue);
+  font-family: "Economica", sans-serif;
+  font-size: 1.6rem;
+  text-transform: lowercase;
+  flex: 1;
+}
+
+.add-btn {
+  border: unset;
+  background: unset;
+  padding: 2px;
+  padding-left: 14px;
+  font-family: "Economica", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
