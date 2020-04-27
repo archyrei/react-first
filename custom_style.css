@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --another-blue: #40739e;
+}
+
+.another-blue {
+  color: var(--another-blue);
+}
+
 html {
   font-size: 10px;
 }
@@ -26,7 +34,7 @@ html {
 .container {
   height: 600px;
   width: 700px;
-  background-color: #8395a7;
+  background-color: #dcdde1;
   border-radius: 2px;
   padding: 32px;
 }
@@ -35,4 +43,28 @@ html {
   border: 1px solid #636e72;
   border-radius: 2px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Girassol", cursive;
+  text-transform: lowercase;
+}
+
+.header-btn {
+  font-size: 1.8rem;
+  font-family: "Cutive Mono", monospace;
+  padding: 20px;
+  background: unset;
+  border: unset;
+  outline: unset;
 }
