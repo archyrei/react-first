@@ -9,23 +9,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./custom_style.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+    ></script>
     <title>Static Template</title>
   </head>
   <body>
-    <div class="container">
-      <div class="frame">
-        <section class="header">
-          <button class="header-btn">Add</button>
-          <h2 class="header-title">to-do list</h2>
-          <button class="header-btn another-blue">Clear</button>
-        </section>
-        <section class="add">
-          <form class="add-form">
-            <input type="text" class="add-input" />
-            <button class="add-btn">Add</button>
-          </form>
-        </section>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="text/babel">
+      class App extends React.Component {
+        render() {
+          return (
+            <div class="container">
+              <div class="frame">
+                <section class="header">
+                  <button class="header-btn dark">Add</button>
+                  <h2 class="header-title">to-do list</h2>
+                  <button class="header-btn another-blue">Clear</button>
+                </section>
+                <section class="add">
+                  <form class="add-form">
+                    <input type="text" class="add-input dark" />
+                    <button class="add-btn">Add</button>
+                  </form>
+                </section>
+                <section class="list-todo">
+                  <div class="todo">
+                    <span class="todo-text">Brewing Kopi</span>
+                  </div>
+                  <div class="todo">
+                    <span class="todo-text">Brewing kopi</span>
+                  </div>
+                  <div class="todo">
+                    <span class="todo-text">Brewing kopi</span>
+                  </div>
+                </section>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
   </body>
 </html>
